@@ -39,7 +39,6 @@
     <Compile Include="ModuleMerger.cs" />
     <Compile Include="OldWeldingPluginConfig.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="EditorToolbar.cs" />
     <Compile Include="FileManager.cs" />
     <Compile Include="GUIDropdown.cs" />
     <Compile Include="DatabaseHandler.cs" />
@@ -58,35 +57,32 @@
     <Compile Include="Properties\Version.cs">
       <DependentUpon>Version.tt</DependentUpon>
     </Compile>
+    <Compile Include="ToolbarSupport.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="mscorlib">
-      <HintPath>..\..\..\LIB\managed\1.4.1\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Core">
-      <HintPath>..\..\..\LIB\managed\1.4.1\System.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\LIB\managed\1.4.1\System.dll</HintPath>
     </Reference>
     <Reference Include="KSPe">
       <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.dll</HintPath>
-    </Reference>
-    <Reference Include="ToolbarControl">
-      <HintPath>..\..\..\..\..\..\LIB\plugins\ToolbarControl.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="KSPe.UI">
       <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

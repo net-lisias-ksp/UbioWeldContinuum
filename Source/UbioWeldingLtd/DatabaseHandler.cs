@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using UnityEngine;
 
 namespace UbioWeldingLtd
@@ -31,7 +28,6 @@ namespace UbioWeldingLtd
 		public static void initMMAssembly()
 		{
 			Assembly _MMAssembly = null;
-			Assembly _TBAssembly = null;
 
 			Log.dbg("DatabaseHandler.initMMAssembly()");
 
@@ -54,15 +50,6 @@ namespace UbioWeldingLtd
 					)
 				{
 					_MMAssembly = assembly;
-				}
-				else if (	assembly.GetName().Name.Equals(Dependencies.ToobarControl.name)
-					&& (
-						( (_TBAssembly == null) && (aVersion >= Dependencies.ToobarControl.minVersion) )
-						|| (_TBAssembly.GetName().Version < aVersion)
-						)
-					)
-				{
-					_TBAssembly = assembly;
 				}
 
 				Log.dbg("{0} checked.", assembly.GetName().Name);
@@ -89,15 +76,6 @@ namespace UbioWeldingLtd
 			else
 			{
 				Log.info(string.Format("ModuleManager assembly was not found!"));
-			}
-
-			if (_TBAssembly != null)
-			{
-				Log.info("ToolbarControl assembly was found: {0} (version {1})", _TBAssembly.GetName().Name, _TBAssembly.GetName().Version);
-			}
-			else
-			{
-				Log.info("ToolbarControl assembly was not found!");
 			}
 		}
 

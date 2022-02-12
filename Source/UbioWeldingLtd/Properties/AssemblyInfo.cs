@@ -37,6 +37,5 @@ using KSP;
 [assembly: AssemblyFileVersion(UbioWeldingLtd.Version.Number)]
 [assembly: KSPAssembly("UbioWeldingLtd", UbioWeldingLtd.Version.major, UbioWeldingLtd.Version.minor)]
 
-[assembly: KSPAssemblyDependency("KSPe", 2, 1)]
-[assembly: KSPAssemblyDependency("KSPe.UI", 2, 1)]
-[assembly: KSPAssemblyDependency("ToolbarController", 1, 0)]
+[assembly: KSPAssemblyDependency("KSPe", 2, 4)]
+[assembly: KSPAssemblyDependency("KSPe.UI", 2, 4)]

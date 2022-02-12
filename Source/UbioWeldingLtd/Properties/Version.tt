@@ -85,5 +85,6 @@ namespace UbioWeldingLtd
 		public const string Number = "<#= major #>.<#= minor #>.<#= patch #>.<#= build #>";
 		public const string Text = Number + " /L";
 		public const string Vendor = "net.lisias.ksp";
+		public const string FriendlyName = "Welding Ltd. Continuum";
 	}
 }

@@ -61,7 +61,6 @@ namespace UbioWeldingLtd
 		private RaycastHit _hit;
 		private Ray _ray;
 		private EditorFacility _editorFacility;
-		private EditorToolbar _editorToolbar;
 
 		private AdvancedGUITextArea _textAreaDescription = new AdvancedGUITextArea();
 		private AdvancedGUITextField _textFieldTitle = new AdvancedGUITextField();
@@ -110,7 +109,6 @@ namespace UbioWeldingLtd
 		{
 			try {
 				this.HandleAwake();
-				this._editorToolbar = new EditorToolbar(this);
 			} catch (Exception e) {
 				Log.ex(this, e);
 			} finally {
@@ -139,6 +137,23 @@ namespace UbioWeldingLtd
 		}
 
 
+		public void OnEnable()
+		{
+			try {
+				this.HandleEnable();
+			} catch (Exception e) {
+				Log.ex(this, e);
+			} finally {
+				Log.dbgGui(this, "OnEnable handled.");
+			}
+		}
+
+		private void HandleEnable()
+		{
+			ToolbarController.Instance.Register();
+			ToolbarController.Instance.OnTrue += this.HandleToolbarButtonUsed;
+		}
+
 		/*
 		 * Called when plug in is unloaded
 		 */
@@ -146,7 +161,6 @@ namespace UbioWeldingLtd
 		{
 			try {
 				this.HandleDisable();
-				this._editorToolbar.OnDisable(); this._editorToolbar = null;
 			} catch (Exception e) {
 				Log.ex(this, e);
 			} finally {
@@ -156,6 +170,7 @@ namespace UbioWeldingLtd
 
 		private void HandleDisable()
 		{
+			ToolbarController.Instance.Unregister();
 		}
 
 		/// <summary>
@@ -261,7 +276,6 @@ namespace UbioWeldingLtd
 				);
 				EditorLockManager.resetEditorLocks();
 				_editorFacility = EditorDriver.editorFacility;
-				this._editorToolbar.Start();
 			} catch (Exception e) {
 				Log.ex(this, e);
 			} finally {
@@ -275,7 +289,6 @@ namespace UbioWeldingLtd
 		public void Update() {
 			try {
 				this.HandleUpdate();
-				this._editorToolbar.Update();
 			} catch (Exception e) {
 				Log.ex(this, e);
 			} finally {
