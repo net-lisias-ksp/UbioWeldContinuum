@@ -234,26 +234,10 @@ namespace UbioWeldingLtd
 				Log.dbg("old configfile found and deleted");
 			}
 
-			D.PluginConfiguration config = D.PluginConfiguration.CreateFor(Constants.settingXmlConfigFileName);
-			if (!config.exists())
-			{
-				_config = new WeldingConfiguration();
-				FileManager.saveConfig(_config);
-				_config.vector2CurveModules = Constants.basicVector2CurveModules;
-				_config.vector4CurveModules = Constants.basicVector4CurveModules;
-				_config.subModules = Constants.basicSubModules;
-				_config.modulesToIgnore = Constants.basicModulesToIgnore;
-				_config.averagedModuleAttributes = Constants.basicAveragedModuleAttributes;
-				_config.unchangedModuleAttributes = Constants.basicUnchangedModuleAttributes;
-				_config.breakingModuleAttributes = Constants.basicBreakingModuleAttributes;
-			}
-			else
-			{
-				_config = FileManager.loadConfig();
-			}
-
+			_config = FileManager.loadConfig();
 			_config.dataBaseAutoReload = oldConfigFound ? oldConfig.GetValue<bool>(Constants.settingDbAutoReload) : _config.dataBaseAutoReload;
 			_config.allowCareerMode = oldConfigFound ? oldConfig.GetValue<bool>(Constants.settingAllowCareer) : _config.allowCareerMode;
+
 			Welder.includeAllNodes = oldConfigFound ? oldConfig.GetValue<bool>(Constants.settingAllNodes) : _config.includeAllNodes;
 			Welder.dontProcessMasslessParts = oldConfigFound ? oldConfig.GetValue<bool>(Constants.settingDontProcessMasslessParts) : _config.dontProcessMasslessParts;
 
