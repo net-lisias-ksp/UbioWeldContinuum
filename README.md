@@ -5,14 +5,14 @@ This is a welding tool to allow you to merge KSP parts together in order to redu
 
 ## In a Hurry
 
-* [Latest Release](https://github.com/net-lisias-ksp/UbioWeldingLtd/releases)
-	+ [Binaries](https://github.com/net-lisias-ksp/UbioWeldingLtd/tree/Archive)
-* [Source](https://github.com/net-lisias-ksp/UbioWeldingLtd)
-* [Issue Tracker](https://github.com/net-lisias-ksp/UbioWeldingLtd/issues)
+* [Latest Release](https://github.com/net-lisias-ksp/UbioWeldContinuum/releases)
+	+ [Binaries](https://github.com/net-lisias-ksp/UbioWeldContinuum/tree/Archive)
+* [Source](https://github.com/net-lisias-ksp/UbioWeldContinuum)
+* [Issue Tracker](https://github.com/net-lisias-ksp/UbioWeldContinuum/issues)
 * Documentation	
 	+ [Homepage](http://ksp.lisias.net/add-ons/UbioWeldContinuum) on L Aerospace KSP Division
-	+ [Project's README](https://github.com/net-lisias-ksp/UbioWeldingLtd/blob/master/README.md)
-	+ [Install Instructions](https://github.com/net-lisias-ksp/UbioWeldingLtd/blob/master/INSTALL.md)
+	+ [Project's README](https://github.com/net-lisias-ksp/UbioWeldContinuum/blob/master/README.md)
+	+ [Install Instructions](https://github.com/net-lisias-ksp/UbioWeldContinuum/blob/master/INSTALL.md)
 	+ [Known Issues](./KNOWN_ISSUES.md)
 	+ [Change Log](./CHANGE_LOG.md)
 	+ [TODO](./TODO.md) list
