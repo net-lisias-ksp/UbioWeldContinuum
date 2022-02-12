@@ -1,5 +1,16 @@
 # Welding Ltd. Continuum :: Change Log
 
+* 2022-0212: 2.6.0.9 (Lisias) for 1.4.1 <= KSP <= 1.4.5
+	+ Updated the thingy for the latest [KSPe](https://github.com/net-lisias-ksp/KSPAPIExtensions/releases).
+		- Bug fixes
+		- Better borderline use cases handling
+		- Performance improvements 
+	+ More sensible configuration handling:
+		- Some configuration files are now **optional** on `PluginData`
+		- Templates are now on `GameData` and copied to `PluginData` as needed
+		- Some configurations can be overruled by changing them on a `PluginData` copy.
+	+ Fixing some links on README
+		- Thanks to [fwiffo](https://forum.kerbalspaceprogram.com/index.php?/profile/148084-fwiffo/) for the [report](https://forum.kerbalspaceprogram.com/index.php?/topic/96670-14-253-2018-04-06-ubiozur-welding-ltd-continued/&do=findComment&comment=4072206). 
 * 2020-0711: 2.6.0.8 (Lisias) for 1.4.1 <= KSP <= 1.4.5
 	+ A less than ideal way of detecting ModuleManager was fixed.
 		- Thanks for the [heads up](https://github.com/net-lisias-ksp/UbioWeldContinuum/issues/2), [Braste](https://forum.kerbalspaceprogram.com/index.php?/profile/206105-braste/)!  
