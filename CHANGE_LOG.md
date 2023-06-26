@@ -1,5 +1,7 @@
 # Welding Ltd. Continuum :: Change Log
 
+* 2023-0626: 2.6.0.10 (Lisias) for 1.4.1 <= KSP <= 1.4.5
+	+ Updated the thingy for the latest [KSPe](https://github.com/net-lisias-ksp/KSPAPIExtensions/releases).
 * 2022-0212: 2.6.0.9 (Lisias) for 1.4.1 <= KSP <= 1.4.5
 	+ Updated the thingy for the latest [KSPe](https://github.com/net-lisias-ksp/KSPAPIExtensions/releases).
 		- Bug fixes
