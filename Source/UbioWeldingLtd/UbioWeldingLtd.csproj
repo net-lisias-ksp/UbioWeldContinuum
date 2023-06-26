@@ -58,6 +58,8 @@
       <DependentUpon>Version.tt</DependentUpon>
     </Compile>
     <Compile Include="ToolbarSupport.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="ModuleManagerSupport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">
