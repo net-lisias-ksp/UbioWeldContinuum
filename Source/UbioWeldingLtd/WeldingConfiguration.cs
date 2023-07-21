@@ -127,10 +127,11 @@ namespace UbioWeldingLtd
 			set
 			{
 #if (DEBUG)
-				Log.debuglevel = value ? 5 : 0;
+				int newValue = value ? 5 : 0;
 #else
-				Log.debuglevel = value ? 3 : 0;
+				int newValue = value ? 3 : 0;
 #endif
+				if (newValue == Log.debuglevel) return;
 				Log.log("Debug Level set to {0}.", Log.debuglevel);
 			}
 		}
