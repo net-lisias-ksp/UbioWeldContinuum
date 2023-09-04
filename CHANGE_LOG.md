@@ -1,5 +1,13 @@
 # Welding Ltd. Continuum :: Change Log
 
+* 2023-0904: 2.6.0.11 (Lisias) for KSP >= 1.4.1
+	+ Changed the Dependencies to [Modular Management](https://github.com/net-lisias-ksp/ModularManagement/releases)
+		- One download to isntall them all!  
+	+ Updated the welding definitions to cope with `PartModuleVariants`.
+		- Not a fully supported feature, but it works for most cases.
+	+ And, yeah, it still works down to KSP 1.4.1
+		- Tested on KSP 1.4.3
+		- It's possible it works on 1.3.1, but why bother? If you are on 1.3.1, the official fork will work perfectly for you!
 * 2023-0626: 2.6.0.10 (Lisias) for 1.4.1 <= KSP <= 1.4.5
 	+ Updated the thingy for the latest [KSPe](https://github.com/net-lisias-ksp/KSPAPIExtensions/releases).
 * 2022-0212: 2.6.0.9 (Lisias) for 1.4.1 <= KSP <= 1.4.5
