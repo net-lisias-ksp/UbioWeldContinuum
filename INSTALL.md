@@ -21,6 +21,8 @@ The following file layout must be present after installation:
 ```
 <KSP_ROOT>
 	[GameData]
+		[000_KSPe]
+			...
 		[net.lisias.ksp]
 			[UbioWeldingLtd]
 				[Textures]
@@ -32,6 +34,7 @@ The following file layout must be present after installation:
 				UbioWeldContinuum.dll
 				UbioWeldContinuum.version
 		000_KSPe.dll
+		001_KSPe.dll
 		ModuleManager.dll
 		...
 	[PluginData]
@@ -40,14 +43,13 @@ The following file layout must be present after installation:
 				moduleAttributeList.xml
 				new-config.xml
 	KSP.log
-	PastDatabase.cfg
+	PartDatabase.cfg
 	...
 ```
 
 
 ## Dependencies
 * Hard Dependencies
-	* [KSP API Extensions/L](https://github.com/net-lisias-ksp/KSPAPIExtensions) 2.0 or newer
-	* [Toolbar Control](https://github.com/net-lisias-kspu/ToolbarControl) 0.1.6.15 or newer
+	* [KSPe](https://github.com/net-lisias-ksp/KSPe) 2.5.3 or newer
 * Soft Dependencies
 	* [Module Manager](https://github.com/net-lisias-kspu/ModuleManager) 3.0.4 or newer
